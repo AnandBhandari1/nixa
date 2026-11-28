@@ -164,7 +164,7 @@ Speech to text runs on your Mac. Nothing is sent outside for it.
 - The Nixa Android app connects to Nixa on your Mac over your own Wi-Fi.
 - Talk to Nixa, hear agents and get their questions on the phone.
 - Pair it in Settings → Phone. Nixa trusts only phones you have paired.
-- The Android app is a separate project.
+- The Android app is a separate project: [nixa-mobile](https://github.com/AnandBhandari1/nixa-mobile). For now you build it yourself, see its README.
 
 ## ⌨️ The nixa command
 
