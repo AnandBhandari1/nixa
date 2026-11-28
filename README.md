@@ -47,6 +47,7 @@ You start Claude Code, Codex, OpenCode, Cursor and other agents inside Nixa. Nix
 - [FAQ](#-faq)
 - [Support and contact](#-support-and-contact)
 - [Credits](#-credits)
+- [Disclaimer](#%EF%B8%8F-disclaimer)
 - [License](#-license)
 
 ## ✨ What Nixa does
@@ -345,6 +346,18 @@ Nixa is built on the work of these projects. Thank you.
 - Many more Rust crates. Each keeps its own license. The full list is in THIRD_PARTY_LICENSES.html.
 
 Claude Code, Codex, Cursor, Antigravity, OpenCode, Gemini and the other agent names and logos are trademarks of their owners. Nixa is not made by, connected to or supported by them.
+
+## ⚠️ Disclaimer
+
+- Nixa is my personal experiment and research project. I built it for my own use and shared the code openly so others can learn from it and try it. It is not a company product and has no support team.
+- It is made for personal use. It is not built or tested for business, production or critical work.
+- Please treat it as an experiment: report bugs or ideas as issues, but do not expect fixes, support or replies on any timeline.
+- Nixa is in heavy development (beta). Things can break, change or be removed at any time without notice.
+- Nixa is free and open source, given "as is", with no warranty of any kind. There is no guarantee that it works, is safe, is correct or fits any purpose.
+- You use Nixa fully at your own risk. The author is not responsible for any damage or loss, including damage to your computer, phone or other devices, lost or changed files and data, security problems, costs or charges from AI services, or any other problem that comes from using it.
+- AI agents started by Nixa can edit files and run commands on your computer. Keep backups and check what the agents do.
+- All other product names, logos, brands, trademarks and copyrights belong to their owners. Using them here does not mean they made, support or are connected to Nixa.
+- You are responsible for following the terms of service of every tool, model and account you use with Nixa.
 
 ## 📄 License
 
