@@ -1,0 +1,15 @@
+[package]
+name = "nixa-ui"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+gpui.workspace = true
+nixa-protocol.workspace = true
+
+[[example]]
+name = "gallery"
+path = "examples/gallery.rs"

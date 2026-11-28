@@ -1,0 +1,28 @@
+{
+  "label": "Moss",
+  "background": "#1d221d",
+  "foreground": "#c6d0bc",
+  "selection": "#33402f",
+  "cursor": "#9cc36b",
+  "ansi": [
+    "#2c332b",
+    "#d9776b",
+    "#9cc36b",
+    "#d6bd6b",
+    "#7fa8b8",
+    "#b58fb0",
+    "#7fbfa3",
+    "#c6d0bc",
+    "#566152",
+    "#e88d82",
+    "#b0d683",
+    "#e6cf82",
+    "#96bccb",
+    "#c9a5c4",
+    "#95d2b8",
+    "#eef2e8"
+  ],
+  "colors": {
+    "accent": "#9cc36b"
+  }
+}

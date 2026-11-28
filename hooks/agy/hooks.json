@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "./hooks/nixa-status.sh --resume agy idle",
+        "timeout": 3
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "./hooks/nixa-status.sh --resume agy working",
+        "timeout": 3
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./hooks/nixa-status.sh working",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "./hooks/nixa-status.sh done",
+        "timeout": 3
+      }
+    ]
+  }
+}

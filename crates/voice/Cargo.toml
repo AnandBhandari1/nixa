@@ -1,0 +1,26 @@
+[package]
+name = "nixa-voice"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+nixa-protocol.workspace = true
+cpal.workspace = true
+objc2.workspace = true
+anyhow.workspace = true
+regex.workspace = true
+sherpa-onnx.workspace = true
+block2.workspace = true
+objc2-avf-audio.workspace = true
+objc2-audio-toolbox.workspace = true
+objc2-core-audio.workspace = true
+objc2-core-foundation.workspace = true
+objc2-foundation.workspace = true
+reqwest.workspace = true
+sha2.workspace = true
+
+[[example]]
+name = "devices"

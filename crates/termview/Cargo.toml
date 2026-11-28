@@ -1,0 +1,17 @@
+[package]
+name = "nixa-termview"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+nixa-protocol.workspace = true
+gpui.workspace = true
+anyhow.workspace = true
+futures.workspace = true
+
+[[example]]
+name = "term"
+path = "examples/term.rs"

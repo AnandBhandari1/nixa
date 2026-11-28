@@ -1,0 +1,1440 @@
+[
+ {
+  "s": "Nixa discuss the login fix, cheap, test first",
+  "held": false,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "cheap",
+   "fallback": "secondary",
+   "primary": "discuss",
+   "keywords": [
+    "discuss",
+    "test-first",
+    "cheap"
+   ],
+   "matches": [
+    {
+     "id": "discuss",
+     "phrase": "discuss",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "id": "test-first",
+     "phrase": "test first",
+     "start": 6,
+     "end": 8
+    },
+    {
+     "id": "cheap",
+     "phrase": "cheap",
+     "start": 5,
+     "end": 6
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "plan",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "plan"
+   ],
+   "comparisons": 4
+  }
+ },
+ {
+  "s": "Nixa discuss the login fix, cheap, test first",
+  "held": true,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "cheap",
+   "fallback": "secondary",
+   "primary": "discuss",
+   "keywords": [
+    "discuss",
+    "test-first",
+    "cheap"
+   ],
+   "matches": [
+    {
+     "id": "discuss",
+     "phrase": "discuss",
+     "start": 1,
+     "end": 2
+    },
+    {
+     "id": "test-first",
+     "phrase": "test first",
+     "start": 6,
+     "end": 8
+    },
+    {
+     "id": "cheap",
+     "phrase": "cheap",
+     "start": 5,
+     "end": 6
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "stop everything",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "hold",
+   "keywords": [
+    "hold"
+   ],
+   "matches": [
+    {
+     "id": "hold",
+     "phrase": "stop everything",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "stop everything",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "hold",
+   "keywords": [
+    "hold"
+   ],
+   "matches": [
+    {
+     "id": "hold",
+     "phrase": "stop everything",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "stop",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "stop",
+   "keywords": [
+    "stop"
+   ],
+   "matches": [
+    {
+     "id": "stop",
+     "phrase": "stop",
+     "start": 0,
+     "end": 1
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "stop",
+   "path": [
+    "stop",
+    "stopped"
+   ],
+   "comparisons": 1
+  }
+ },
+ {
+  "s": "stop",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "stop",
+   "keywords": [
+    "stop"
+   ],
+   "matches": [
+    {
+     "id": "stop",
+     "phrase": "stop",
+     "start": 0,
+     "end": 1
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "stop",
+   "path": [
+    "stop",
+    "stopped"
+   ],
+   "comparisons": 1
+  }
+ },
+ {
+  "s": "ok go ahead",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "ok go ahead",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "assign",
+   "keywords": [
+    "assign"
+   ],
+   "matches": [
+    {
+     "id": "assign",
+     "phrase": "go ahead",
+     "start": 1,
+     "end": 3
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "go ahead",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "go ahead",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "assign",
+   "keywords": [
+    "assign"
+   ],
+   "matches": [
+    {
+     "id": "assign",
+     "phrase": "go ahead",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "can we go ahead?",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "can we go ahead?",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "don't build it, just plan",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "don't build it, just plan",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "build mode",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "build-mode",
+   "keywords": [
+    "build-mode"
+   ],
+   "matches": [
+    {
+     "id": "build-mode",
+     "phrase": "build mode",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "build mode",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "build-mode",
+   "keywords": [
+    "build-mode"
+   ],
+   "matches": [
+    {
+     "id": "build-mode",
+     "phrase": "build mode",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "plan it with the best model",
+  "held": false,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "plan",
+   "keywords": [
+    "plan",
+    "best-model"
+   ],
+   "matches": [
+    {
+     "id": "plan",
+     "phrase": "plan it",
+     "start": 0,
+     "end": 2
+    },
+    {
+     "id": "best-model",
+     "phrase": "best model",
+     "start": 4,
+     "end": 6
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "plan",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "plan"
+   ],
+   "comparisons": 4
+  }
+ },
+ {
+  "s": "plan it with the best model",
+  "held": true,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "plan",
+   "keywords": [
+    "plan",
+    "best-model"
+   ],
+   "matches": [
+    {
+     "id": "plan",
+     "phrase": "plan it",
+     "start": 0,
+     "end": 2
+    },
+    {
+     "id": "best-model",
+     "phrase": "best model",
+     "start": 4,
+     "end": 6
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "push it to main",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "push",
+   "keywords": [
+    "push"
+   ],
+   "matches": [
+    {
+     "id": "push",
+     "phrase": "push it",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": true,
+   "grantsApproval": false,
+   "action": "approval",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "approval"
+   ],
+   "comparisons": 3
+  }
+ },
+ {
+  "s": "push it to main",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "push",
+   "keywords": [
+    "push"
+   ],
+   "matches": [
+    {
+     "id": "push",
+     "phrase": "push it",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": true,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "review terminal 3",
+  "held": false,
+  "d": {
+   "kind": "review",
+   "capability": "testing",
+   "mode": "review",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "review",
+   "keywords": [
+    "review"
+   ],
+   "matches": [
+    {
+     "id": "review",
+     "phrase": "review terminal 3",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "review",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "check"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "review terminal 3",
+  "held": true,
+  "d": {
+   "kind": "review",
+   "capability": "testing",
+   "mode": "review",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "review",
+   "keywords": [
+    "review"
+   ],
+   "matches": [
+    {
+     "id": "review",
+     "phrase": "review terminal 3",
+     "start": 0,
+     "end": 3
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "continue",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "continue",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "go-on",
+   "keywords": [
+    "go-on"
+   ],
+   "matches": [
+    {
+     "id": "go-on",
+     "phrase": "continue",
+     "start": 0,
+     "end": 1
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "continue the work",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "continue the work",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "keywords": [],
+   "matches": [],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "please hold",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "hold",
+   "keywords": [
+    "hold"
+   ],
+   "matches": [
+    {
+     "id": "hold",
+     "phrase": "hold",
+     "start": 1,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "please hold",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "hold",
+   "keywords": [
+    "hold"
+   ],
+   "matches": [
+    {
+     "id": "hold",
+     "phrase": "hold",
+     "start": 1,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "nixa explain why you did that",
+  "held": false,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "explain",
+   "keywords": [
+    "explain"
+   ],
+   "matches": [
+    {
+     "id": "explain",
+     "phrase": "explain",
+     "start": 1,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "plan",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "plan"
+   ],
+   "comparisons": 4
+  }
+ },
+ {
+  "s": "nixa explain why you did that",
+  "held": true,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "explain",
+   "keywords": [
+    "explain"
+   ],
+   "matches": [
+    {
+     "id": "explain",
+     "phrase": "explain",
+     "start": 1,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "let us review the agents now",
+  "held": false,
+  "d": {
+   "kind": "review",
+   "capability": "testing",
+   "mode": "review",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "review",
+   "keywords": [
+    "review"
+   ],
+   "matches": [
+    {
+     "id": "review",
+     "phrase": "review the agents",
+     "start": 2,
+     "end": 5
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "review",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "check"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "let us review the agents now",
+  "held": true,
+  "d": {
+   "kind": "review",
+   "capability": "testing",
+   "mode": "review",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "review",
+   "keywords": [
+    "review"
+   ],
+   "matches": [
+    {
+     "id": "review",
+     "phrase": "review the agents",
+     "start": 2,
+     "end": 5
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "do it cheap and quick",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "cheap",
+   "fallback": "secondary",
+   "primary": "cheap",
+   "keywords": [
+    "cheap"
+   ],
+   "matches": [
+    {
+     "id": "cheap",
+     "phrase": "cheap",
+     "start": 2,
+     "end": 3
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "do it cheap and quick",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "cheap",
+   "fallback": "secondary",
+   "primary": "assign",
+   "keywords": [
+    "assign",
+    "cheap"
+   ],
+   "matches": [
+    {
+     "id": "assign",
+     "phrase": "do it",
+     "start": 0,
+     "end": 2
+    },
+    {
+     "id": "cheap",
+     "phrase": "cheap",
+     "start": 2,
+     "end": 3
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "build",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "build"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "second opinion please",
+  "held": false,
+  "d": {
+   "kind": "review",
+   "capability": "testing",
+   "mode": "review",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "second-opinion",
+   "keywords": [
+    "second-opinion"
+   ],
+   "matches": [
+    {
+     "id": "second-opinion",
+     "phrase": "second opinion",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "review",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "review",
+    "check"
+   ],
+   "comparisons": 5
+  }
+ },
+ {
+  "s": "second opinion please",
+  "held": true,
+  "d": {
+   "kind": "review",
+   "capability": "testing",
+   "mode": "review",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "second-opinion",
+   "keywords": [
+    "second-opinion"
+   ],
+   "matches": [
+    {
+     "id": "second-opinion",
+     "phrase": "second opinion",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "deploy to production",
+  "held": false,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "deploy",
+   "keywords": [
+    "deploy",
+    "production"
+   ],
+   "matches": [
+    {
+     "id": "deploy",
+     "phrase": "deploy",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "id": "production",
+     "phrase": "production",
+     "start": 2,
+     "end": 3
+    }
+   ],
+   "requiresApproval": true,
+   "grantsApproval": false,
+   "action": "approval",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "approval"
+   ],
+   "comparisons": 3
+  }
+ },
+ {
+  "s": "deploy to production",
+  "held": true,
+  "d": {
+   "kind": "general",
+   "capability": "coding",
+   "mode": "build",
+   "tier": "standard",
+   "fallback": "secondary",
+   "primary": "deploy",
+   "keywords": [
+    "deploy",
+    "production"
+   ],
+   "matches": [
+    {
+     "id": "deploy",
+     "phrase": "deploy",
+     "start": 0,
+     "end": 1
+    },
+    {
+     "id": "production",
+     "phrase": "production",
+     "start": 2,
+     "end": 3
+    }
+   ],
+   "requiresApproval": true,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "we need to discuss the db",
+  "held": false,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "discuss",
+   "keywords": [
+    "discuss"
+   ],
+   "matches": [
+    {
+     "id": "discuss",
+     "phrase": "discuss",
+     "start": 3,
+     "end": 4
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "plan",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "plan"
+   ],
+   "comparisons": 4
+  }
+ },
+ {
+  "s": "we need to discuss the db",
+  "held": true,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "discuss",
+   "keywords": [
+    "discuss"
+   ],
+   "matches": [
+    {
+     "id": "discuss",
+     "phrase": "discuss",
+     "start": 3,
+     "end": 4
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "just talk",
+  "held": false,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "discuss",
+   "keywords": [
+    "discuss"
+   ],
+   "matches": [
+    {
+     "id": "discuss",
+     "phrase": "just talk",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "plan",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "plan"
+   ],
+   "comparisons": 4
+  }
+ },
+ {
+  "s": "just talk",
+  "held": true,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "discuss",
+   "keywords": [
+    "discuss"
+   ],
+   "matches": [
+    {
+     "id": "discuss",
+     "phrase": "just talk",
+     "start": 0,
+     "end": 2
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ },
+ {
+  "s": "hey nixa plan first then build",
+  "held": false,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "plan",
+   "keywords": [
+    "plan"
+   ],
+   "matches": [
+    {
+     "id": "plan",
+     "phrase": "plan first",
+     "start": 2,
+     "end": 4
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "plan",
+   "path": [
+    "stop",
+    "hold",
+    "risk",
+    "talk",
+    "plan"
+   ],
+   "comparisons": 4
+  }
+ },
+ {
+  "s": "hey nixa plan first then build",
+  "held": true,
+  "d": {
+   "kind": "planning",
+   "capability": "planning",
+   "mode": "plan",
+   "tier": "premium",
+   "fallback": "secondary",
+   "primary": "plan",
+   "keywords": [
+    "plan"
+   ],
+   "matches": [
+    {
+     "id": "plan",
+     "phrase": "plan first",
+     "start": 2,
+     "end": 4
+    }
+   ],
+   "requiresApproval": false,
+   "grantsApproval": false,
+   "action": "hold",
+   "path": [
+    "stop",
+    "hold",
+    "held"
+   ],
+   "comparisons": 2
+  }
+ }
+]

@@ -1,0 +1,20 @@
+[package]
+name = "nixa-editor"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+gpui.workspace = true
+image = { version = "0.25", default-features = false, features = ["ico", "png"] }
+merman = { version = "0.11", default-features = false, features = ["all-diagrams", "png", "system-fonts"] }
+nixa-ui.workspace = true
+
+[dev-dependencies]
+gpui = { workspace = true, features = ["test-support"] }
+
+[[example]]
+name = "editor"
+path = "examples/editor.rs"

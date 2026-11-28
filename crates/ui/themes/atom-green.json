@@ -1,0 +1,40 @@
+{
+  "label": "Atom Green",
+  "background": "#21252b",
+  "foreground": "#98c379",
+  "selection": "#3e4451",
+  "cursor": "#98c379",
+  "ansi": [
+    "#454c59",
+    "#e06c75",
+    "#98c379",
+    "#e5c07b",
+    "#61afef",
+    "#c678dd",
+    "#56b6c2",
+    "#98c379",
+    "#767676",
+    "#e06c75",
+    "#98c379",
+    "#e5c07b",
+    "#61afef",
+    "#c678dd",
+    "#56b6c2",
+    "#98c379"
+  ],
+  "colors": {
+    "foreground": "#98c379",
+    "muted": "#61afef",
+    "dim": "#c678dd",
+    "accent": "#56b6c2",
+    "accent_foreground": "#21252b",
+    "solid": "#98c379",
+    "solid_foreground": "#21252b",
+    "ring": "#61afef",
+    "working": "#e5c07b",
+    "blocked": "#e06c75",
+    "done": "#61afef",
+    "idle": "#56b6c2",
+    "unknown": "#767676"
+  }
+}

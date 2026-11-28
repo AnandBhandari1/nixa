@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "./hooks/nixa-status.sh --resume cursor idle"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "./hooks/nixa-status.sh --resume cursor working"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "./hooks/nixa-status.sh working"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "./hooks/nixa-status.sh working"
+      }
+    ],
+    "afterMCPExecution": [
+      {
+        "command": "./hooks/nixa-status.sh working"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "./hooks/nixa-status.sh working"
+      }
+    ],
+    "stop": [
+      {
+        "command": "./hooks/nixa-status.sh done"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "./hooks/nixa-status.sh idle"
+      }
+    ]
+  }
+}

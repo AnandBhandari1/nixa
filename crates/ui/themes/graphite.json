@@ -1,0 +1,28 @@
+{
+  "label": "Graphite",
+  "background": "#242528",
+  "foreground": "#c5c7cc",
+  "selection": "#3b3e45",
+  "cursor": "#d4d6db",
+  "ansi": [
+    "#3a3c41",
+    "#e06c6c",
+    "#9bc47f",
+    "#d9b86a",
+    "#8aa9d6",
+    "#b892d6",
+    "#7fbfbf",
+    "#c5c7cc",
+    "#5d6068",
+    "#eb8080",
+    "#aed494",
+    "#e6c780",
+    "#9fbbe3",
+    "#c9a5e3",
+    "#93cfcf",
+    "#eceef2"
+  ],
+  "colors": {
+    "accent": "#8aa9d6"
+  }
+}

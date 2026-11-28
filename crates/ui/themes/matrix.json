@@ -1,0 +1,28 @@
+{
+  "label": "Matrix",
+  "background": "#000000",
+  "foreground": "#b4ffb4",
+  "selection": "#18401e",
+  "cursor": "#00ff41",
+  "ansi": [
+    "#0c1a0e",
+    "#ff4646",
+    "#00ff41",
+    "#ffd60a",
+    "#00c8ff",
+    "#00e5c8",
+    "#00ffc8",
+    "#b4ffb4",
+    "#2e8b3e",
+    "#ff4646",
+    "#5fd068",
+    "#ffd60a",
+    "#00c8ff",
+    "#00e5c8",
+    "#00ffc8",
+    "#ffffff"
+  ],
+  "colors": {
+    "accent": "#00ff41"
+  }
+}

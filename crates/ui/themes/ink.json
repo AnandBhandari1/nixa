@@ -1,0 +1,28 @@
+{
+  "label": "Ink",
+  "background": "#151a26",
+  "foreground": "#c2c9db",
+  "selection": "#27314d",
+  "cursor": "#7c9cff",
+  "ansi": [
+    "#232a3b",
+    "#f07178",
+    "#a6d189",
+    "#f2c879",
+    "#7c9cff",
+    "#c49cff",
+    "#79d0e0",
+    "#c2c9db",
+    "#4a5470",
+    "#ff8a8f",
+    "#b9e0a0",
+    "#ffd88f",
+    "#9bb4ff",
+    "#d4b3ff",
+    "#95e0ee",
+    "#eef1f8"
+  ],
+  "colors": {
+    "accent": "#7c9cff"
+  }
+}

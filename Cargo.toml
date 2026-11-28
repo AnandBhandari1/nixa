@@ -1,0 +1,90 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/protocol",
+    "crates/engine",
+    "crates/cli",
+    "crates/ui",
+    "crates/app",
+    "crates/termview",
+    "crates/store",
+    "crates/brain",
+    "crates/voice",
+    "crates/mcp",
+    "crates/jsonedit",
+    "crates/phone",
+    "crates/git",
+    "crates/editor",
+    "crates/desktop",
+    "crates/xtask",
+]
+
+[workspace.package]
+version = "0.1.48"
+edition = "2024"
+rust-version = "1.99"
+license = "GPL-3.0-only"
+publish = false
+
+[workspace.dependencies]
+nixa-protocol = { path = "crates/protocol" }
+nixa-engine = { path = "crates/engine" }
+nixa-ui = { path = "crates/ui" }
+nixa-termview = { path = "crates/termview" }
+nixa-store = { path = "crates/store" }
+nixa-brain = { path = "crates/brain" }
+nixa-voice = { path = "crates/voice" }
+nixa-phone = { path = "crates/phone" }
+nixa-git = { path = "crates/git" }
+nixa-editor = { path = "crates/editor" }
+nixa-desktop = { path = "crates/desktop" }
+gpui = { version = "=0.2.2", default-features = false, features = ["font-kit", "runtime_shaders"] }
+alacritty_terminal = "=0.26.0"
+portable-pty = "=0.9.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+tokio = { version = "1.54.1", features = ["full"] }
+anyhow = "1.0.104"
+rusqlite = { version = "0.43.0", features = ["bundled"] }
+reqwest = { version = "0.13.5", features = ["json", "blocking", "stream"] }
+axum = { version = "0.8.9", features = ["ws"] }
+regex = "1.13.2"
+cpal = "0.18.2"
+objc2 = "0.6.5"
+libc = "0.2.191"
+futures = "0.3.34"
+futures-util = "0.3.34"
+tokio-util = "0.7.20"
+sha2 = "0.10.9"
+tempfile = "3.27.0"
+sherpa-onnx = "=2.0.2"
+tungstenite = "0.29.0"
+crossterm = "0.29.0"
+ratatui = { version = "0.30.2", features = ["crossterm_0_29"] }
+json-tree-editor = "0.1.0"
+rustls = { version = "0.23.46", default-features = false, features = ["ring", "std", "tls12"] }
+tokio-rustls = { version = "0.26.6", default-features = false, features = ["ring", "tls12"] }
+rcgen = { version = "0.14.10", default-features = false, features = ["crypto", "pem", "ring"] }
+ring = "0.17.14"
+time = "0.3.55"
+base64 = "0.22.1"
+qrcode = { version = "0.15.0", default-features = false }
+tokio-tungstenite = "0.29.0"
+block2 = "0.6.2"
+objc2-avf-audio = { version = "0.3.2", default-features = false, features = ["std", "block2", "objc2-audio-toolbox", "AVAudioEngine", "AVAudioNode", "AVAudioIONode", "AVAudioFormat", "AVAudioBuffer", "AVAudioTypes", "AVAudioTime"] }
+objc2-audio-toolbox = { version = "0.3.2", default-features = false, features = ["std", "AUComponent", "AudioUnitProperties"] }
+objc2-core-audio = { version = "0.3.2", default-features = false, features = ["std", "AudioHardware"] }
+objc2-core-foundation = { version = "0.3.2", default-features = false, features = ["std", "CFString", "CFRunLoop", "CFDate"] }
+objc2-foundation = { version = "0.3.2", default-features = false, features = ["std", "block2", "NSObject", "NSString", "NSNotification", "NSOperation"] }
+
+[profile.dev]
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+opt-level = 1
+
+[profile.dev.package.nixa-engine]
+opt-level = 2
+
+[profile.dev.package.nixa-protocol]
+opt-level = 2

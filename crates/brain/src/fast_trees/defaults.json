@@ -1,0 +1,1319 @@
+{
+  "version": 1,
+  "maxDepth": 12,
+  "keywords": [
+    {
+      "id": "discuss",
+      "word": "discuss",
+      "aliases": [
+        "discuss",
+        "let's discuss",
+        "can we discuss",
+        "talk it through",
+        "talk about",
+        "just talk",
+        "think with me",
+        "do not assign",
+        "don't start anyone"
+      ],
+      "effect": "plan-topic",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "plan",
+      "word": "plan",
+      "aliases": [
+        "plan",
+        "plan only",
+        "just plan",
+        "make a plan",
+        "plan it",
+        "plan first",
+        "write a plan"
+      ],
+      "effect": "plan-write",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "assign",
+      "word": "assign",
+      "aliases": [
+        "assign",
+        "assign it",
+        "assign it to the developer",
+        "give it to the developer",
+        "go ahead",
+        "build",
+        "build it",
+        "do it",
+        "start it",
+        "send it",
+        "send this",
+        "start the work"
+      ],
+      "effect": "act",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "review",
+      "word": "review",
+      "aliases": [
+        "review",
+        "review the agents",
+        "review terminal 3",
+        "check the agents",
+        "check terminal 3",
+        "check what they did",
+        "check the finished ones"
+      ],
+      "effect": "review-now",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "explain",
+      "word": "explain",
+      "aliases": [
+        "explain",
+        "why",
+        "why did you",
+        "tell me why",
+        "what did you decide",
+        "how does it work"
+      ],
+      "effect": "explain",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "debate",
+      "word": "debate",
+      "aliases": [
+        "debate",
+        "debate this",
+        "let them debate",
+        "debate with Codex"
+      ],
+      "effect": "debate",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "plan-mode",
+      "word": "plan mode",
+      "aliases": [
+        "plan mode",
+        "planning mode",
+        "switch to plan mode",
+        "switch to planning",
+        "plan mode on"
+      ],
+      "effect": "mode-plan",
+      "match": "mode",
+      "on": true
+    },
+    {
+      "id": "build-mode",
+      "word": "build mode",
+      "aliases": [
+        "build mode",
+        "worker mode",
+        "work mode",
+        "switch to build mode",
+        "switch to building",
+        "back to build mode"
+      ],
+      "effect": "mode-build",
+      "match": "mode",
+      "on": true
+    },
+    {
+      "id": "review-mode",
+      "word": "review mode",
+      "aliases": [
+        "review mode",
+        "check mode",
+        "switch to review mode"
+      ],
+      "effect": "mode-review",
+      "match": "mode",
+      "on": true
+    },
+    {
+      "id": "yourself",
+      "word": "yourself",
+      "aliases": [
+        "yourself",
+        "you do it",
+        "do it yourself",
+        "Nixa do it",
+        "no agent",
+        "don't use an agent"
+      ],
+      "effect": "yourself",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "team",
+      "word": "team",
+      "aliases": [
+        "use the team",
+        "team run",
+        "feature team",
+        "PR team",
+        "or a team id from the team list"
+      ],
+      "effect": "team",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "new-agent",
+      "word": "new agent",
+      "aliases": [
+        "new agent",
+        "fresh agent",
+        "new terminal",
+        "start a new one",
+        "not that one"
+      ],
+      "effect": "new-agent",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "quick-check",
+      "word": "quick check",
+      "aliases": [
+        "quick check",
+        "quick look",
+        "just look",
+        "have a look",
+        "peek"
+      ],
+      "effect": "quick",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "one-step",
+      "word": "one step",
+      "aliases": [
+        "one step",
+        "just this step",
+        "only step 2",
+        "one step at a time"
+      ],
+      "effect": "one-step",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "full",
+      "word": "full",
+      "aliases": [
+        "full build",
+        "all the way",
+        "end to end",
+        "the whole thing",
+        "finish it"
+      ],
+      "effect": "full",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "commit",
+      "word": "commit",
+      "aliases": [
+        "commit",
+        "commit it",
+        "local commit"
+      ],
+      "effect": "risk",
+      "match": "risk",
+      "on": true
+    },
+    {
+      "id": "push",
+      "word": "push",
+      "aliases": [
+        "push",
+        "push it",
+        "force push"
+      ],
+      "effect": "risk",
+      "match": "risk",
+      "on": true
+    },
+    {
+      "id": "deploy",
+      "word": "deploy",
+      "aliases": [
+        "deploy",
+        "redeploy",
+        "release",
+        "ship it",
+        "go live"
+      ],
+      "effect": "risk",
+      "match": "risk",
+      "on": true
+    },
+    {
+      "id": "publish",
+      "word": "publish",
+      "aliases": [
+        "publish",
+        "post it",
+        "post the comment"
+      ],
+      "effect": "risk",
+      "match": "risk",
+      "on": true
+    },
+    {
+      "id": "production",
+      "word": "production",
+      "aliases": [
+        "production",
+        "prod",
+        "prod database",
+        "live server",
+        "live database"
+      ],
+      "effect": "risk",
+      "match": "risk",
+      "on": true
+    },
+    {
+      "id": "discard",
+      "word": "discard",
+      "aliases": [
+        "discard",
+        "discard the changes",
+        "throw away the changes",
+        "reset hard",
+        "delete the branch",
+        "clean",
+        "restore",
+        "wipe"
+      ],
+      "effect": "risk",
+      "match": "risk",
+      "on": true
+    },
+    {
+      "id": "this-repo",
+      "word": "this repo",
+      "aliases": [
+        "this repo",
+        "this project",
+        "this space",
+        "in here",
+        "only here"
+      ],
+      "effect": "this-repo",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "everywhere",
+      "word": "everywhere",
+      "aliases": [
+        "everywhere",
+        "all spaces",
+        "all projects",
+        "every repo",
+        "all repos"
+      ],
+      "effect": "everywhere",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "only-this",
+      "word": "only this",
+      "aliases": [
+        "only this",
+        "only this file",
+        "just this file",
+        "only this part",
+        "nothing else",
+        "don't touch anything else"
+      ],
+      "effect": "only-this",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "urgent",
+      "word": "urgent",
+      "aliases": [
+        "urgent",
+        "it's urgent",
+        "right now",
+        "asap",
+        "immediately",
+        "straight away"
+      ],
+      "effect": "urgent",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "later",
+      "word": "later",
+      "aliases": [
+        "later",
+        "not now",
+        "park it",
+        "log it",
+        "add it to the list",
+        "put it on the list",
+        "write it down",
+        "after this",
+        "tomorrow"
+      ],
+      "effect": "later",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "tonight",
+      "word": "tonight",
+      "aliases": [
+        "tonight",
+        "at night",
+        "overnight",
+        "at 9 pm",
+        "tomorrow at 9",
+        "in 2 hours"
+      ],
+      "effect": "at-time",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "every",
+      "word": "every",
+      "aliases": [
+        "every day",
+        "daily",
+        "every morning",
+        "weekly",
+        "every Monday",
+        "hourly",
+        "weekdays"
+      ],
+      "effect": "every",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "test-first",
+      "word": "test first",
+      "aliases": [
+        "test first",
+        "tests first",
+        "write the test first",
+        "TDD"
+      ],
+      "effect": "test-first",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "second-opinion",
+      "word": "second opinion",
+      "aliases": [
+        "second opinion",
+        "get it reviewed",
+        "ask the reviewer",
+        "code review it"
+      ],
+      "effect": "second-opinion",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "deeper",
+      "word": "deeper",
+      "aliases": [
+        "deeper",
+        "go deeper",
+        "think harder",
+        "be thorough",
+        "in depth"
+      ],
+      "effect": "deeper",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "cheap",
+      "word": "cheap",
+      "aliases": [
+        "cheap",
+        "cheap model",
+        "low cost",
+        "free model",
+        "small model",
+        "no big model",
+        "save quota"
+      ],
+      "effect": "cheap",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "best-model",
+      "word": "best model",
+      "aliases": [
+        "best model",
+        "big model",
+        "strongest model",
+        "top model"
+      ],
+      "effect": "best-model",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "backup-model",
+      "word": "backup model",
+      "aliases": [
+        "backup model",
+        "use the backup",
+        "the other model"
+      ],
+      "effect": "backup-model",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "stop",
+      "word": "stop",
+      "aliases": [
+        "stop",
+        "quiet",
+        "cancel",
+        "never mind",
+        "enough",
+        "silence",
+        "shut up"
+      ],
+      "effect": "stop",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "hold",
+      "word": "hold",
+      "aliases": [
+        "hold",
+        "hold everything",
+        "pause",
+        "pause everything",
+        "stop everything",
+        "stop all agents",
+        "do nothing until I say"
+      ],
+      "effect": "hold",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "go-on",
+      "word": "go on",
+      "aliases": [
+        "go on",
+        "resume",
+        "carry on",
+        "start again",
+        "continue",
+        "unpause",
+        "back to work"
+      ],
+      "effect": "go-on",
+      "match": "gate",
+      "on": true
+    },
+    {
+      "id": "silent",
+      "word": "silent",
+      "aliases": [
+        "silent",
+        "silent mode",
+        "quiet mode",
+        "quiet time",
+        "go quiet",
+        "quiet for 30 minutes"
+      ],
+      "effect": "silent",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "undo",
+      "word": "undo",
+      "aliases": [
+        "undo",
+        "undo that",
+        "take that back",
+        "put it back"
+      ],
+      "effect": "undo",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "repeat",
+      "word": "repeat",
+      "aliases": [
+        "repeat",
+        "say that again",
+        "what did you say",
+        "I cannot hear you"
+      ],
+      "effect": "repeat",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "status",
+      "word": "status",
+      "aliases": [
+        "status",
+        "what's going on",
+        "where are we",
+        "what are you working on",
+        "what is waiting"
+      ],
+      "effect": "status",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "remember",
+      "word": "remember",
+      "aliases": [
+        "remember",
+        "remember that",
+        "keep in mind",
+        "from now on",
+        "forget"
+      ],
+      "effect": "remember",
+      "match": "hint",
+      "on": true
+    },
+    {
+      "id": "take-over",
+      "word": "take over",
+      "aliases": [
+        "take over",
+        "take over terminal 3",
+        "you lead it",
+        "you handle it"
+      ],
+      "effect": "take-over",
+      "match": "hint",
+      "on": true
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "planning",
+      "capability": "planning",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "coding",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "refactor",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "ui",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "testing",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "cheap",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "big-context",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "vision",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "long-reasoning",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "speed",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "planning",
+      "capability": "*",
+      "mode": "plan",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "planning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "coding",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "refactor",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "ui",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "testing",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "cheap",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "big-context",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "vision",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "long-reasoning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "speed",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "coding",
+      "capability": "*",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "planning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "coding",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "refactor",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "ui",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "testing",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "cheap",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "big-context",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "vision",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "long-reasoning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "speed",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "refactor",
+      "capability": "*",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "planning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "coding",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "refactor",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "ui",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "testing",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "cheap",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "big-context",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "vision",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "long-reasoning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "speed",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "ui",
+      "capability": "*",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "planning",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "coding",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "refactor",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "ui",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "testing",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "cheap",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "big-context",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "vision",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "long-reasoning",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "speed",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "testing",
+      "capability": "*",
+      "mode": "review",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "planning",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "coding",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "refactor",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "ui",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "testing",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "cheap",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "big-context",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "vision",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "long-reasoning",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "speed",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "review",
+      "capability": "*",
+      "mode": "review",
+      "tier": "premium",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "planning",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "coding",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "refactor",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "ui",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "testing",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "cheap",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "big-context",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "vision",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "long-reasoning",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "speed",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "research",
+      "capability": "*",
+      "mode": "plan",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "planning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "coding",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "refactor",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "ui",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "testing",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "cheap",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "big-context",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "vision",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "long-reasoning",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "speed",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    },
+    {
+      "kind": "general",
+      "capability": "*",
+      "mode": "build",
+      "tier": "standard",
+      "fallback": "secondary"
+    }
+  ],
+  "trees": {
+    "brain-routing": {
+      "start": "stop",
+      "steps": {
+        "stop": {
+          "kind": "check",
+          "key": "stop",
+          "label": "Stop?",
+          "yes": "stopped",
+          "no": "hold"
+        },
+        "hold": {
+          "kind": "check",
+          "key": "hold",
+          "label": "Hold?",
+          "yes": "held",
+          "no": "risk"
+        },
+        "risk": {
+          "kind": "check",
+          "key": "risk",
+          "label": "Risk needs the user?",
+          "yes": "approval",
+          "no": "talk"
+        },
+        "talk": {
+          "kind": "check",
+          "key": "talk",
+          "label": "Talk only?",
+          "yes": "plan",
+          "no": "review"
+        },
+        "review": {
+          "kind": "check",
+          "key": "review",
+          "label": "Review?",
+          "yes": "check",
+          "no": "build"
+        },
+        "stopped": {
+          "kind": "action",
+          "key": "stop",
+          "label": "Stop turn"
+        },
+        "held": {
+          "kind": "action",
+          "key": "hold",
+          "label": "Hold work"
+        },
+        "approval": {
+          "kind": "action",
+          "key": "approval",
+          "label": "Keep approval gate"
+        },
+        "plan": {
+          "kind": "action",
+          "key": "plan",
+          "label": "Plan"
+        },
+        "check": {
+          "kind": "action",
+          "key": "review",
+          "label": "Review"
+        },
+        "build": {
+          "kind": "action",
+          "key": "build",
+          "label": "Build"
+        }
+      }
+    }
+  }
+}
