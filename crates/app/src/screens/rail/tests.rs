@@ -145,8 +145,8 @@ fn waiting_tasks_skip_locked_spaces() {
 
 #[test]
 fn the_deep_brain_button_asks_once_per_space() {
-    assert_eq!(super::host::deep_body("nixtalk"), serde_json::json!({"space": "nixtalk", "ensure": true}));
-    assert_eq!(super::host::deep_note(&serde_json::json!({"ok": true, "data": {"space": "nixtalk", "started": true}})), "Starting the deep brain of space nixtalk.");
-    assert!(super::host::deep_note(&serde_json::json!({"data": {"space": "nixtalk", "started": false}})).contains("already up"));
+    assert_eq!(super::host::deep_body("shop"), serde_json::json!({"space": "shop", "ensure": true}));
+    assert_eq!(super::host::deep_note(&serde_json::json!({"ok": true, "data": {"space": "shop", "started": true}})), "Starting the deep brain of space shop.");
+    assert!(super::host::deep_note(&serde_json::json!({"data": {"space": "shop", "started": false}})).contains("already up"));
     assert!(super::deep_tip(None).contains("open a space"));
 }
